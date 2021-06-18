@@ -1,0 +1,245 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+
+<script src="http://www.google.com/jsapi" type="text/javascript"></script>
+<script type="text/javascript">google.load("jquery", "1.3.2");</script>
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="assets/css/normalize.css' %}">
+  <link rel="stylesheet" href="assets/css/skeleton.css' %}">
+  <link rel="stylesheet" href="assets/css/general.css' %}">
+  <link rel="stylesheet" href="assets/css/custom.css' %}">
+  <link rel="stylesheet" href="assets/css/styles.css">
+
+  <!-- Start : Google Analytics Code -->
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-118782745-1"></script>
+  <script>
+   window.dataLayer = window.dataLayer || [];
+   function gtag(){dataLayer.push(arguments);}
+   gtag('js', new Date());
+
+   gtag('config', 'UA-118782745-1');
+
+   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-118782745-1', 'auto');
+    ga('send', 'pageview');
+
+
+
+
+ </script>
+ <!-- End : Google Analytics Code -->
+
+ <script type="text/javascript" src="resources/hidebib.js"></script>
+ <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,400italic,600italic,300,300italic' rel='stylesheet' type='text/css'>
+ <head>
+  <title>MBT</title>
+  <meta property='og:title' content='Attention Bottlenecks for Multimodal Fusion' />
+  <meta property="og:description" content="Arsha Nagrani, Attention Bottlenecks for Multimodal Fusion" />
+  <meta property='og:url' content='TODO' />
+</head>
+
+<body>
+  <br>
+  </br>
+</br>
+  <center>
+     <span style="font-size:40px;color:Navy"><b>Attention Bottlenecks for Multimodal Fusion </span></b>
+</br>
+</br>
+</br>
+    <table align=center width=1000px>
+      <tr>
+        <td align=center width=150px>
+          <center>
+            <span style="font-size:20px"><a href="http://www.robots.ox.ac.uk/~arsha/" target="_blank">Arsha Nagrani</a></span>
+          </center>
+        </td>
+	 <td align=center width=150px>
+          <center>
+            <span style="font-size:20px"><a href="https://shanyang.me/" target="_blank">Shan Yang</a></span>
+          </center>
+		</td>
+	<td align=center width=150px>
+          <center>
+            <span style="font-size:20px"><a href="https://scholar.google.co.uk/citations?user=l2FS2_IAAAAJ&hl=en" target="_blank">Anurag Arnab</a></span>
+          </center>
+        </td>
+      </tr>
+      <tr>
+	
+	 <td align=center width=150px>
+          <center>
+            <span style="font-size:20px"><a href="" target="_blank">Aren Jansen</a></span>
+          </center>
+        </td>
+        <td align=center width=150px>
+          <center>
+            <span style="font-size:20px"><a href="https://thoth.inrialpes.fr/~schmid/" target="_blank">Cordelia Schmid</a></span>
+          </center>
+        </td>
+       <td align=center width=150px>
+          <center>
+            <span style="font-size:20px"><a href="https://chensun.me/" target="_blank">Chen Sun</a></span>
+          </center>
+        </td>
+      </tr>
+    </table>
+    <table align=center width=1000px>
+      <tr>
+        <td align=center width=100px>
+          <center>
+            <span style="font-size:18px"></span>
+          </center>
+        </td>
+        <td align=center width=500px>
+          <center>
+            <span style="font-size:25px"> Google Research</span>
+          </center>
+        </td>
+        <td align=center width=100px>
+        </br>
+        </br>
+          <center>
+            <span style="font-size:14px"> </span>
+          </center>
+        </td>
+      </table>
+
+         <table align=center width=500px>
+          <!--<tr>
+            <td align=center width=200px><center><span style="font-size:24px"><a href="https://arxiv.org/abs/1804.00326">link to paper</a></span>&nbsp;<a href="./assets/bibtex_CVPR2018.txt">[Bibtex]</a></center></td>
+
+            <tr/> -->
+          </table><br/>
+        </center>
+
+      <!-- Primary Page Layout
+      –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+       <center>
+
+        <div class="container">
+          <div class="row">
+            <center>
+              <div class="twelve columns" style="margin-top: 3%">
+                <div class="row" align=center>
+                  <img width="800" class="center" src="assets/images/bottlenecks-2.png">
+                  <table align=center width=1000px>
+                    <tr>
+                        <td width=1000px>
+                                <font size="4">
+                                    Unlike late fusion (left), where no cross-modal information is exchanged in the model until after the classifier, we investigate two pathways for the exchange of cross-modal information. The first is via standard pairwise self attention across all hidden units in a layer, but applied only to later layers in the model -- mid fusion (middle, left). 
+    We also propose the use of `fusion bottlenecks' (middle, right) that restrict attention flow within a layer through tight latent units. Both forms of restriction can be applied in conjunction (Bottleneck Mid Fusion) for optimal performance (right). We show B=2 bottleneck units and 3 hidden units per modality. Grey boxes indicate tokens that receive attention flow from both audio and video tokens.
+                                  </font>
+                          </td>
+                    </tr>
+
+                  </table>
+  
+              </div> 
+              <div class="container">  
+          <div class="row" align="justify"> 
+                <h2 class="section-title"><span>Abstract</span></h2>
+		<p>
+		  Humans perceive the world by concurrently processing and fusing high-dimensional inputs from multiple modalities such as vision and audio. Machine
+
+perception models, in stark contrast, are typically modality-specific and optimised
+for unimodal benchmarks. A common approach for building multimodal models is
+to simply combine multiple of these modality-specific architectures using late-stage
+fusion of final representations or predictions ("late-fusion"). Instead, we introduce a
+novel transformer based architecture that fuses multimodal information at multiple layers, via "cross-modal bottlenecks".  Unlike traditional pairwise self-attention, these bottlenecks force information between different modalities to pass through a small
+number of "bottleneck" latent units, requiring the model to collate and condense the
+most relevant information in each modality and only share what is necessary. We
+find that such a strategy improves fusion performance, at the same time reducing
+
+computational cost. We conduct thorough ablation studies, and achieve state-of-the-
+art results on multiple audio-visual classification benchmarks including Audioset,
+
+		  Epic-Kitchens and VGGSound. All code and models will be released.
+		  
+		</p>
+		</div>
+		</center>
+	      </div>
+	      </div>
+
+	 
+      <center>
+
+
+
+
+
+              
+
+               <!-- <table align=center width=800px>
+                  <img width = "500" src="assets/images/splash.png">
+                </table>
+              -->
+ 
+          
+
+
+
+              
+              
+              
+              <div align="center" class="row section topspace"> 
+                <h2 class="section-title"><span>Publication</span></h2>
+		Coming soon!
+    <!--            
+                <div class="ref">
+                <div class="authors">
+                A. Nagrani,
+                C. Sun, 
+                D. Ross, 
+                R. Suthankar, 
+                C. Schmid,
+                A. Zisserman
+                </div>
+                <div class="title">
+                <a href="http://www.robots.ox.ac.uk/~vgg/publications/2020/Nagrani20/nagrani20.pdf">
+                Speech2Action: Cross-modal Supervision for Action Recognition
+                </a> &nbsp;
+                </div>
+                <div class="conf">
+                Conference on Computer Vision and Pattern Recognition,  2020
+                </div>
+                <div class="links">
+                <a onclick="if (document.getElementById(&quot;BIBNagrani20&quot;).style.display==&quot;none&quot;) document.getElementById(&quot;BIBNagrani20&quot;).style.display=&quot;block&quot;; else document.getElementById(&quot;BIBNagrani20&quot;).style.display=&quot;none&quot;;"> Bibtex </a> |  
+                <a onclick="if (document.getElementById(&quot;ABSNagrani20&quot;).style.display==&quot;none&quot;) document.getElementById(&quot;ABSNagrani20&quot;).style.display=&quot;block&quot;; else document.getElementById(&quot;ABSNagrani20&quot;).style.display=&quot;none&quot;;"> Abstract </a> |  
+                <a href="https://arxiv.org/abs/2003.13594"> ArXiv</a>    
+                </div>
+                <div style="display: none;" class="BibtexExpand" id="BIBNagrani20">
+                <pre class="bibtex">
+@InProceeding{Nagrani20c,
+  author       = "Arsha Nagrani and Chen Sun and David Ross and Rahul Sukthankar and Cordelia Schmid and Andrew Zisserman",
+  title        = "Speech2Action: Cross-modal Supervision for Action Recognition",
+  booktitle    = "CVPR",
+  year         = "2020",
+}
+                </pre>
+                
+                </div>
+                <div style="display: none;" class="AbstractExpand" id="ABSNagrani20"><br>
+                  Is it possible to guess human action from dialogue alone? In this work we investigate the link between spoken words and actions in movies.  We note that movie screenplays describe actions, as well as contain the speech of characters and hence can be used to learn this correlation with no additional supervision.    
+                  We  train  a  BERT-based <i>Speech2Action</i> classifier on over a thousand movie screenplays, to predict action labels from transcribed speech segments. We then apply this model to the speech segments of a large unlabelled movie corpus (188M speech segments from 288K movies). Using the predictions of this model, we obtain weak action labels for over 800K video clips. 
+                  By training on these video clips, we demonstrate superior action recognition performance on standard action recognition benchmarks, without using a single manually labelled action example.
+  
+                </div> -->
+                </div>
+               </div>
+
+	      </center>
+               <br><br>
+               <script xml:space="preserve" language="JavaScript">
+                hideallbibs();
+              </script>
+            </body>
+            </html>
+
